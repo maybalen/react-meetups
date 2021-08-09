@@ -1,11 +1,23 @@
-import React from "react";
-import "./style.css";
+import { Route, Switch } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+import AllMeetupsPage from "./pages/AllMeetups";
+import FavoritesPage from "./pages/Favorites";
+import NewMeetupPage from "./pages/NewMeetup";
 
-export default function App() {
+
+
+function App() {
+
+
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+      <Layout>
+        <Switch>
+          <Route path='/' exact><AllMeetupsPage/></Route>
+          <Route path='/new-meetup'><NewMeetupPage/></Route>
+          <Route path='/favorites'><FavoritesPage/></Route>
+        </Switch>
+      </Layout>
   );
 }
+
+export default App;
