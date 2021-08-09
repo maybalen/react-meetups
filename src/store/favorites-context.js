@@ -22,7 +22,7 @@ export function FavoritesContextProvider(props) {
             return prevUserFavorites.filter(meetup => meetup.id !== meetupId); // filter to return new array
         }) 
     }
-    function itemIsFavortieHandler(meetupId) {
+    function itemIsFavoriteHandler(meetupId) {
         return userFavorites.some(meetup => meetup.id === meetupId);
     }
 
@@ -32,7 +32,7 @@ export function FavoritesContextProvider(props) {
         totalFavorites: userFavorites.length,
         addFavorite: addFavoriteHandler,
         removeFavorite: removeFavoriteHandler,
-        itemIsFavorite: itemIsFavortieHandler
+        itemIsFavorite: itemIsFavoriteHandler
     }; 
 
     return (
