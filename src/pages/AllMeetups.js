@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import MeetupList from '../components/meetups/MeetupList';
+import React from 'react';
 
 // const DUMMY_DATA = [
 //     {

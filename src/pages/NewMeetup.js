@@ -1,5 +1,6 @@
 import NewMeetupForm from "../components/meetups/NewMeetupForm"
 import { useHistory } from 'react-router-dom';
+import React from 'react';
 
 const NewMeetupPage = () => {
     const history = useHistory();

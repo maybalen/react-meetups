@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import Card from '../ui/Card';
 import classes from './NewMeetupForm.module.css';
-
+import React from 'react';
 const NewMeetupForm = (props) => {
 
     // use Ref for read only
